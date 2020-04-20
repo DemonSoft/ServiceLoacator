@@ -19,6 +19,7 @@ class PageViewController: UIViewController {
 
 
     @IBAction func finishAction(_ sender: UIButton) {
+        ProfileService.service.remove()
         CoordinatorService.service.coordinator.start()
     }
 }
